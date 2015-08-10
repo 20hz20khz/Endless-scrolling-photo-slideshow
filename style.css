@@ -1,0 +1,94 @@
+#slideshowBox{
+	display:none;
+	position:relative;
+	top:0px;
+	width:100%;
+	height:200px
+	overflow:hidden;
+	/*margin:0 0 15px 0;*/ margin:0;
+	padding:0px;
+	/*z-index:555;*/
+}
+
+.slideshowWindow{
+	display:none;
+	float:left;
+	width:100%;
+	height:200px;
+	position:relative;
+	overflow:hidden;
+	padding:0px;
+/*z-index:556;*/
+}
+
+	.slideshowTape{
+		display:none;
+		position:absolute;
+		left:0px;
+		/*top:-10px;*/
+		/*width:400px;*/width:6480px;
+		/*height:9600px; number of slides times 400px???*/height:200px;
+		padding:0px;
+		/*z-index:557;*/
+	}
+	.speedTwo{
+		-webkit-transition: all 2s ease-in-out;
+		-moz-transition: all 2s ease-in-out;
+		transition: all 2s ease-in-out;
+	}
+	.speedSix{
+		-webkit-transition: all 6s linear;
+		-moz-transition: all 6s linear;
+		transition: all 6s linear;
+	}
+	.speedZero{
+		-webkit-transition-duration:0s;
+		-moz-transition-duration:0s;
+		transition-duration:0s;
+	}
+
+		.slide{
+			display:none;
+			float:left;
+			width:310px;
+			height:200px;
+			background:white;
+			margin:0px;
+			padding:0 5px;
+			overflow:hidden;
+			text-align:center;
+/*z-index:558;*/
+		}
+
+.buttonGroup{
+	position:relative;
+	float:left;
+	width:400px;
+	height:20px;
+}
+	a.slideTab:link, a.slideTab:visited{
+		float:right;
+		display:block;
+		width:auto;
+		height:20px;
+		line-height:20px;
+		font-family: Tahoma, Verdana, 'PT Sans', "Helvetica", "Myriad Pro", "Lucida Grande", "Arial", sans-serif !important;
+		font-size:10px;
+		text-decoration:none;
+		text-align:center;
+		color:#1a5d7b;
+		margin:0 20px 0 0px;
+	}
+
+	.hidden{
+		display:none !important;
+
+	}
+
+	.shown{
+		display:block !important;
+	}
+
+	a.slideTab:hover{
+		text-decoration:underline;
+	}
